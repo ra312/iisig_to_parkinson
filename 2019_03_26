@@ -1,0 +1,8 @@
+The data in the json file is structured as follows (x,y,c) where (x,y) are 2d coordinates
+and c in [0,1] is the intensity of tapping.
+This data is naturally a path in 3D Euclidean space. We can apply the signatures to extract the features.
+It is yet unclear why there is internal division in these measurements.
+It might be that there are different persons tapping.
+First step would be get 2D python lists where each element is a triple (x,y,c). i.e.
+x_11 y_11 c_11 x_12 y_12 c_12 x_13 y_13 c_13 .....
+x_21 y_21 c_21 x_22 y_22 c_22 x_23 y_23 c_23 .....
